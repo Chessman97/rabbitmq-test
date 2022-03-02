@@ -1,0 +1,40 @@
+{
+  "name": "rabbitmq-test",
+  "version": "0.1.0",
+  "description": "API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node -r ts-node/register src/server.ts",
+    "client": "node -r ts-node/register src/client.ts",
+    "build": "rimraf build && tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chessman97/rabbitmq-test"
+  },
+  "author": "efanov mikhail",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/amqplib": "^0.5.13",
+    "@types/bull": "^3.10.2",
+    "@types/node": "^12.7.1",
+    "@types/nodemailer": "^6.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "dotenv": "^8.0.0",
+    "mongoose": "^6.2.4"
+  }
+}
