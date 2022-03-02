@@ -47,8 +47,4 @@ export class RabbitBroker {
         });
     }
 
-    // private async saveMassege(message: string): Promise<void> {
-    //     console.log(message);
-    //     await mongoose.connect('mongodb://localhost:27017/test');
-    // }
 }
